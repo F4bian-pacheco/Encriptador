@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <main>
+        <section id="main-content">
+            <figure>
+                <img src="logo.svg" alt="">
+            </figure>
+            <div id="entrada">
+                <textarea cols="60" rows="18"></textarea>
+            </div>
+            <p id="info">Solo letras minusculas y sin acentos</p>
+            <button onclick="encriptar()" class="btn" id="encr-btn">Encriptar</button>
+            <button onclick="desencriptar()" class="btn" id="desencr-btn">Desencriptar</button>
+        </section>
+        <section id="container-salida">
+            <div id="salida">
+                <img src="muñeco.svg" alt="">
+                <h3>Ningún mensaje fue encontrado</h3>
+                <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+            </div>
+            <p id="cpy-txt"></p>
+            <button class="btn" id="copy-btn" onclick="copy()">Copiar</button>
+        </section>
+    </main>
+    <footer>
+        <p>Hecho con ❤️ por <a href="https://github.com/F4bian-pacheco" target="_blank">F4bian-pacheco</a></p>
+    </footer>
+    <script src="index.js"></script>
+</body>
+
+</html>
